@@ -7,7 +7,7 @@ public class GerenciadorDeTarefas {
 
     public GerenciadorDeTarefas() {
         // Prioridade maior primeiro
-        this.tarefas = new PriorityQueue<>((t1, t2) -> t2.getPrioridade() - t1.getPrioridade());
+        this.tarefas = new PriorityQueue<>((t1, t2) -> Integer.compare(t2.getPrioridade(), t1.getPrioridade()));
     }
 
     public synchronized void adicionarTarefa(Tarefa tarefa) {

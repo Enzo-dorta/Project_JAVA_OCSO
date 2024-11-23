@@ -23,9 +23,9 @@ public class Tarefa implements Runnable {
     @Override
     public void run() {
         try {
-            logArea.append("Executando tarefa: " + descricao +  "🙋" + "\n");
+            logArea.append("Executando tarefa: " + descricao +  "  🙋" + "\n");
             TimeUnit.MILLISECONDS.sleep(tempoExecucao);
-            logArea.append("Tarefa concluída: " + descricao + "👍" + "\n");
+            logArea.append("Tarefa concluída: " + descricao + "   👍" + "\n");
         } catch (InterruptedException e) {
             System.err.println("Tarefa " + descricao + " interrompida.");
         }
